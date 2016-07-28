@@ -1,0 +1,19 @@
+
+plugin.tx_extbasefluidformvalidation {
+	view {
+		# cat=plugin.tx_extbasefluidformvalidation/file; type=string; label=Path to template root (FE)
+		templateRootPath = EXT:extbase_fluid_form_validation/Resources/Private/Templates/
+		# cat=plugin.tx_extbasefluidformvalidation/file; type=string; label=Path to template partials (FE)
+		partialRootPath = EXT:extbase_fluid_form_validation/Resources/Private/Partials/
+		# cat=plugin.tx_extbasefluidformvalidation/file; type=string; label=Path to template layouts (FE)
+		layoutRootPath = EXT:extbase_fluid_form_validation/Resources/Private/Layouts/
+	}
+	persistence {
+		# cat=plugin.tx_extbasefluidformvalidation//a; type=string; label=Default storage PID
+		storagePid =
+	}
+	settings {
+
+
+	}
+}

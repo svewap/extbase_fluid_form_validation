@@ -1,0 +1,16 @@
+{namespace fv=WapplerSystems\ExtbaseFluidFormValidation\ViewHelpers}
+{namespace v=FluidTYPO3\Vhs\ViewHelpers}
+
+<fv:flashMessages as="flashMessages">
+    <f:if condition="{flashMessages -> f:count()} > 0">
+        <ul class="list-unstyled">
+        <f:for each="{flashMessages}" as="flashMessage">
+            <li>
+                <div class="alert alert-{flashMessage.class -> v:format.substring(start:8)}">
+                    {flashMessage.message}
+                </div>
+            </li>
+        </f:for>
+        </ul>
+    </f:if>
+</fv:flashMessages>

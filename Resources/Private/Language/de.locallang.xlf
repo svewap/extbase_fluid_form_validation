@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2015-09-05T19:07:36Z" product-name="doag_users">
+		<header/>
+		<body>
+
+            <trans-unit id="btn.submit" xml:space="preserve">
+                <source>Submit</source>
+                <target>Senden</target>
+            </trans-unit>
+
+            <trans-unit id="hdl.profile">
+                <source>Edit your profile</source>
+                <target>Profil bearbeiten</target>
+            </trans-unit>
+
+            <trans-unit id="firstname">
+                <source>First name</source>
+                <target>Vorname</target>
+            </trans-unit>
+
+            <trans-unit id="lastname">
+                <source>Last name</source>
+                <target>Nachname</target>
+            </trans-unit>
+
+            <trans-unit id="email">
+                <source>Email</source>
+                <target>E-Mail</target>
+            </trans-unit>
+
+            <trans-unit id="msg.formerror">
+                <source>An error occurred. Please correct your input.</source>
+                <target>Bitte korrigieren Sie Ihre Eingaben.</target>
+            </trans-unit>
+
+            <!-- Generelle extbase Fehlermeldungen überschreiben -->
+            <trans-unit id="1221560718">
+                <target>Bitte füllen Sie dieses Feld aus.</target>
+            </trans-unit>
+
+            <trans-unit id="profile.firstname.1428504122">
+                <target>Bitte geben Sie in dieses Feld ein Wort mit der Länge zwischen %s und %s Zeichen ein.</target>
+            </trans-unit>
+
+		</body>
+	</file>
+</xliff>

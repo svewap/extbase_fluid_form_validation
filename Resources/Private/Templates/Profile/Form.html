@@ -1,0 +1,103 @@
+<div xmlns="http://www.w3.org/1999/xhtml" lang="en"
+     xmlns:f="http://typo3.org/ns/fluid/ViewHelpers"
+     xmlns:fv="http://typo3.org/ns/WapplerSystems/ExtbaseFluidFormValidation/ViewHelpers"
+     xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers">
+    <f:layout name="Default" />
+
+
+    <f:section name="main">
+
+        <f:render partial="FlashMessages" />
+
+
+        <f:form noCache="TRUE" action="submit" id="profile-form" section="profile" controller="Profile" name="profile" class="form-horizontal" object="{profile}" method="post">
+
+            <h1><f:translate key="hdl.profile" /></h1>
+
+
+            <fieldset>
+
+
+                <div class="row">
+
+                    <div class="col-xs-12 col-md-6">
+
+                        <div class="form-group">
+
+
+                            <div class="col-xs-12 {fv:condition.form.hasError(for:'profile.firstname', then:'has-error')}">
+
+                                <div class="input-group ">
+                                    <span class="input-group-addon"><i class="icon-prepend fa fa-user"></i></span>
+                                    <f:form.textfield property="firstname" id="firstname" class="form-control" placeholder="{f:translate(key:'firstname')} {v:condition.form.isRequired(object:profile,property:'firstname', then:'*')}" />
+                                </div>
+                                <f:render partial="FieldError" section="Main" arguments="{for: 'profile.firstname'}" />
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+
+                        <div class="form-group">
+
+                            <div class="col-xs-12 {fv:condition.form.hasError(for:'profile.lastname', then:'has-error')}">
+
+                                <div class="input-group ">
+                                    <span class="input-group-addon"><i class="icon-prepend fa fa-user"></i></span>
+                                    <f:form.textfield property="lastname" id="lastname" class="form-control" placeholder="{f:translate(key:'lastname')} {v:condition.form.isRequired(object:profile,property:'lastname', then:'*')}" />
+                                </div>
+
+                                <f:render partial="FieldError" section="Main" arguments="{for: 'profile.lastname'}" />
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+                <div class="row">
+
+                    <div class="col-xs-12 col-md-12">
+
+                        <div class="form-group">
+                            <div class="col-xs-12 {fv:condition.form.hasError(for:'profile.email', then:'has-error')}">
+
+                                <div class="input-group ">
+                                    <span class="input-group-addon"><i class="icon-prepend fa fa-envelope"></i></span>
+                                    <f:form.textfield property="email" id="email" class="form-control" placeholder="{f:translate(key:'email')} {v:condition.form.isRequired(object:profile,property:'email', then:'*')}" />
+                                </div>
+
+                                <f:render partial="FieldError" section="Main" arguments="{for: 'profile.email'}" />
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </fieldset>
+
+
+            <fieldset>
+
+                <div class="form-group">
+                    <div class="col-xs-12">
+                        <f:form.button type="submit" class="btn btn-primary"><f:translate key="btn.submit" /></f:form.button>
+                    </div>
+                </div>
+
+            </fieldset>
+
+        </f:form>
+
+
+
+
+    </f:section>
+</div>

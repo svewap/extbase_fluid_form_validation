@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" >
+		<header/>
+		<body>
+			<trans-unit id="btn.submit" xml:space="preserve">
+                <source>Submit</source>
+            </trans-unit>
+
+            <trans-unit id="hdl.profile">
+                <source>Edit your profile</source>
+            </trans-unit>
+
+			<trans-unit id="firstname">
+				<source>First name</source>
+			</trans-unit>
+
+			<trans-unit id="lastname">
+				<source>Last name</source>
+			</trans-unit>
+
+			<trans-unit id="email">
+				<source>Email</source>
+			</trans-unit>
+
+			<trans-unit id="msg.formerror">
+				<source>An error occurred. Please correct your input.</source>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>

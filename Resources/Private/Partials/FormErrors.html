@@ -1,0 +1,24 @@
+{namespace v=FluidTYPO3\Vhs\ViewHelpers}
+
+<f:form.validationResults for="{object}">
+	<f:if condition="{validationResults.flattenedErrors}">
+
+		<f:for each="{validationResults.flattenedErrors}" key="propertyPath" as="errors">
+
+            <f:comment>PropertyPath mit . drin unterdrücken, weil diese sich auf Felder beziehen und diese Fehlermeldungen werden direkt beim Feld ausgegeben</f:comment>
+            <v:condition.string.contains needle="." haystack="{propertyPath}">
+                <f:else>
+                    <div class="alert alert-danger" role="alert">
+                        <ul class="list-unstyled">
+                            <f:for each="{errors}" as="error">
+                                <li>{error}</li>
+                            </f:for>
+                        </ul>
+                    </div>
+                </f:else>
+            </v:condition.string.contains>
+
+		</f:for>
+
+</f:if>
+</f:form.validationResults>

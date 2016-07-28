@@ -1,0 +1,22 @@
+
+plugin.tx_extbasefluidformvalidation {
+	view {
+		templateRootPath = {$plugin.tx_extbasefluidformvalidation.view.templateRootPath}
+		partialRootPath = {$plugin.tx_extbasefluidformvalidation.view.partialRootPath}
+		layoutRootPath = {$plugin.tx_extbasefluidformvalidation.view.layoutRootPath}
+	}
+	persistence {
+		storagePid = {$plugin.tx_extbasefluidformvalidation.persistence.storagePid}
+	}
+	features {
+		# uncomment the following line to enable the new Property Mapper.
+		# rewrittenPropertyMapper = 1
+	}
+	settings {
+
+	}
+
+}
+
+
+
