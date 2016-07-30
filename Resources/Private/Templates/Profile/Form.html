@@ -31,7 +31,7 @@
                                     <span class="input-group-addon"><i class="icon-prepend fa fa-user"></i></span>
                                     <f:form.textfield property="firstname" id="firstname" class="form-control" placeholder="{f:translate(key:'firstname')} {v:condition.form.isRequired(object:profile,property:'firstname', then:'*')}" />
                                 </div>
-                                <f:render partial="FieldError" section="Main" arguments="{for: 'profile.firstname'}" />
+                                <f:render partial="FieldErrors" arguments="{for: 'profile.firstname'}" />
 
                             </div>
                         </div>
@@ -48,7 +48,7 @@
                                     <f:form.textfield property="lastname" id="lastname" class="form-control" placeholder="{f:translate(key:'lastname')} {v:condition.form.isRequired(object:profile,property:'lastname', then:'*')}" />
                                 </div>
 
-                                <f:render partial="FieldError" section="Main" arguments="{for: 'profile.lastname'}" />
+                                <f:render partial="FieldErrors" arguments="{for: 'profile.lastname'}" />
 
                             </div>
 
@@ -71,11 +71,51 @@
                                     <f:form.textfield property="email" id="email" class="form-control" placeholder="{f:translate(key:'email')} {v:condition.form.isRequired(object:profile,property:'email', then:'*')}" />
                                 </div>
 
-                                <f:render partial="FieldError" section="Main" arguments="{for: 'profile.email'}" />
+                                <f:render partial="FieldErrors" arguments="{for: 'profile.email'}" />
 
                             </div>
                         </div>
 
+                    </div>
+
+                </div>
+
+
+                <div class="row">
+
+                    <div class="col-xs-12 col-md-6">
+
+                        <div class="form-group">
+
+
+                            <div class="col-xs-12 {fv:condition.form.hasError(for:'profile.password', then:'has-error')}">
+
+                                <div class="input-group ">
+                                    <span class="input-group-addon"><i class="icon-prepend fa fa-user"></i></span>
+                                    <fv:form.password property="password" id="password" class="form-control" placeholder="{f:translate(key:'password')} {v:condition.form.isRequired(object:profile,property:'password', then:'*')}" />
+                                </div>
+                                <f:render partial="FieldErrors" arguments="{for: 'profile.password'}" />
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+
+                        <div class="form-group">
+
+                            <div class="col-xs-12 {fv:condition.form.hasError(for:'profile.passwordConfirm', then:'has-error')}">
+
+                                <div class="input-group ">
+                                    <span class="input-group-addon"><i class="icon-prepend fa fa-user"></i></span>
+                                    <fv:form.password property="passwordConfirm" id="passwordConfirm" class="form-control" placeholder="{f:translate(key:'passwordConfirm')} {v:condition.form.isRequired(object:profile,property:'passwordConfirm', then:'*')}" />
+                                </div>
+
+                                <f:render partial="FieldErrors" arguments="{for: 'profile.passwordConfirm'}" />
+
+                            </div>
+
+                        </div>
                     </div>
 
                 </div>

@@ -29,6 +29,16 @@
                 <target>E-Mail</target>
             </trans-unit>
 
+            <trans-unit id="password">
+                <source>Password</source>
+                <target>Passwort</target>
+            </trans-unit>
+
+            <trans-unit id="passwordConfirm">
+                <source>Confirm password</source>
+                <target>Passwort bestätigen</target>
+            </trans-unit>
+
             <trans-unit id="msg.formerror">
                 <source>An error occurred. Please correct your input.</source>
                 <target>Bitte korrigieren Sie Ihre Eingaben.</target>
@@ -41,6 +51,10 @@
 
             <trans-unit id="profile.firstname.1428504122">
                 <target>Bitte geben Sie in dieses Feld ein Wort mit der Länge zwischen %s und %s Zeichen ein.</target>
+            </trans-unit>
+
+            <trans-unit id="profile.password.2343422434">
+                <target>Die Passwörter stimmen nicht überein.</target>
             </trans-unit>
 
 		</body>

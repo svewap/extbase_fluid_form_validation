@@ -30,6 +30,24 @@ class Profile extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     protected $email = "";
 
 
+
+    /**
+     * @var string
+     * @validate NotEmpty
+     * @validate StringLength(minimum=8, maximum=22)
+     */
+    protected $password = "";
+
+
+    /**
+     * @var string
+     * @validate NotEmpty
+     * @validate StringLength(minimum=8, maximum=22)
+     */
+    protected $passwordConfirm = "";
+
+
+
     /**
      * @return string
      */
@@ -76,6 +94,38 @@ class Profile extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     public function setEmail(string $email)
     {
         $this->email = $email;
+    }
+
+    /**
+     * @return string
+     */
+    public function getPassword(): string
+    {
+        return $this->password;
+    }
+
+    /**
+     * @param string $password
+     */
+    public function setPassword(string $password)
+    {
+        $this->password = $password;
+    }
+
+    /**
+     * @return string
+     */
+    public function getPasswordConfirm(): string
+    {
+        return $this->passwordConfirm;
+    }
+
+    /**
+     * @param string $passwordConfirm
+     */
+    public function setPasswordConfirm(string $passwordConfirm)
+    {
+        $this->passwordConfirm = $passwordConfirm;
     }
 
 

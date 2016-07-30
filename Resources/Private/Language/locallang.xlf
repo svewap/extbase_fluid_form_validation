@@ -23,6 +23,14 @@
 				<source>Email</source>
 			</trans-unit>
 
+			<trans-unit id="password">
+				<source>Password</source>
+			</trans-unit>
+
+			<trans-unit id="passwordConfirm">
+				<source>Confirm password</source>
+			</trans-unit>
+
 			<trans-unit id="msg.formerror">
 				<source>An error occurred. Please correct your input.</source>
 			</trans-unit>

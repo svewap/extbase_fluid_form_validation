@@ -29,6 +29,7 @@ class ProfileController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
 
     /**
      * @param Profile $profile
+     * @validate $profile WapplerSystems\ExtbaseFluidFormValidation\Validator\PasswordValidator
      */
     public function submitAction(Profile $profile)
     {
